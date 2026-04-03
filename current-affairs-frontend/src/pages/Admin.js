@@ -74,7 +74,7 @@ function Admin() {
   return (
     <div className="container">
       <div className="admin-box">
-        <h3>📤 Add Current Affairs</h3>
+        <h3>Add Current Affairs</h3>
 
         {/* DATE */}
         <input

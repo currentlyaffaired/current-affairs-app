@@ -1,7 +1,7 @@
 function Starred() {
   return (
     <div className="container">
-      <h2>⭐ Starred Questions</h2>
+      <h2>Starred Questions</h2>
       <p>Coming soon...</p>
     </div>
   );

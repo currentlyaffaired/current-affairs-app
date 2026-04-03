@@ -18,7 +18,7 @@ function Navbar({ setPage }) {
 
   return (
     <div className="navbar">
-      <div>📘 Current Affairs</div>
+      <div>Current Affairs</div>
 
       <div>
         <button onClick={() => setOpen(!open)}>☰</button>
@@ -34,7 +34,7 @@ function Navbar({ setPage }) {
             </div>
 
             <div className="menu-item" onClick={() => setPage("starred")}>
-              ⭐ Starred
+              Starred
             </div>
 
             <div

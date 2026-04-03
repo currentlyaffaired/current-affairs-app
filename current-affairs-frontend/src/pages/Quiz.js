@@ -56,7 +56,7 @@ function Quiz() {
   if (current >= questions.length) {
     return (
       <div className="container">
-        <h2>🎉 Quiz Finished</h2>
+        <h2>Quiz Finished</h2>
         <p>Your Score: {score} / {questions.length}</p>
       </div>
     );
@@ -68,7 +68,7 @@ function Quiz() {
 
   return (
     <div className="container">
-      <h2>🧠 Quiz Mode</h2>
+      <h2>Quiz Mode</h2>
 
       <p>
         Question {current + 1} / {questions.length}

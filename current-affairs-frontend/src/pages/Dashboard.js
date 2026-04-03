@@ -12,7 +12,6 @@ const categories = [
 ];
 
 function Dashboard() {
-  const [data, setData] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -25,13 +24,13 @@ function Dashboard() {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line
   }, []);
 
   const fetchData = async () => {
     const res = await API.get("/user/all", {
       headers: { Authorization: `Bearer ${token}` }
     });
-    setData(res.data);
     setFiltered(res.data);
   };
 

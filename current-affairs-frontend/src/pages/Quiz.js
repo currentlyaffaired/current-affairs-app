@@ -12,6 +12,7 @@ function Quiz() {
 
   useEffect(() => {
     fetchQuestions();
+    // eslint-disable-next-line
   }, []);
 
   const fetchQuestions = async () => {

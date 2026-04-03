@@ -184,12 +184,22 @@ h2 {
   background: #3b82f6;
 }
 
+.dark .menu {
+  background: #1e293b;
+  color: #e2e8f0
+}
+
+.dark .menu-item:hover{
+  background: #334155;
+}
+
 /* MENU */
 .menu {
   position: absolute;
   top: 60px;
   right: 20px;
   background: white;
+  color: #1e293b;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -202,6 +212,7 @@ h2 {
 .menu-item {
   padding: 8px;
   cursor: pointer;
+  color: inherit;
 }
 
 .menu-item:hover {

@@ -1,0 +1,154 @@
+/* Base */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+  color: white;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Admin Box */
+.admin-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Text */
+.question {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.answer {
+  color: #22c55e;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.explanation {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Category Tag */
+.category-tag {
+  margin-top: 10px;
+  display: inline-block;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: gray;
+}
+
+/* Inputs */
+input, textarea, select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+/* Search */
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+/* Category Pills */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.category-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  background: #eef2ff;
+}
+
+.category-btn.active {
+  background: #2563eb !important;
+  color: white !important;
+  border: none;
+}
+
+/* Section Title */
+h2 {
+  margin-bottom: 10px;
+}

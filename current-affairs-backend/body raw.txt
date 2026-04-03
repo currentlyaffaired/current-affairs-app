@@ -1,0 +1,6 @@
+"token": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2MwOTAzOTM1MzNmODEzZDkxMmZhNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NDk3OTgzMiwiZXhwIjoxNzc1NTg0NjMyfQ.wgiY04zHF4f6wzFHKjmUSu4zO3DzmTVM_7wXtH6GSks
+
+{
+  "username": "admin2",
+  "password": "admin123"
+}

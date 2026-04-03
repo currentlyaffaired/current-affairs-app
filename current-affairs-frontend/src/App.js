@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
 import Quiz from "./pages/Quiz";
 import Starred from "./pages/Starred";
+import "./App.css";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));

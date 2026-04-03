@@ -154,6 +154,11 @@ function Dashboard() {
               ) : (
                 <>
                   <p className="question">Q. {q.question}</p>
+
+                  {q.options && q.options.map((opt, i) => (
+                    <p key={i}>• {opt}</p>
+                  ))}
+
                   <p className="answer">Ans: {q.answer}</p>
 
                   {q.explanation && (

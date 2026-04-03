@@ -3,21 +3,29 @@ import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
-import "./App.css";
+import Quiz from "./pages/Quiz";
+import Starred from "./pages/Starred";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const role = localStorage.getItem("role");
+  const [page, setPage] = useState("home");
 
   if (!token) return <Login setToken={setToken} />;
 
   return (
     <div>
-      <Navbar />
+      <Navbar setPage={setPage} />
 
-      {role === "admin" && <Admin />}
+      {page === "home" && (
+        <>
+          {role === "admin" && <Admin />}
+          <Dashboard />
+        </>
+      )}
 
-      <Dashboard />
+      {page === "quiz" && <Quiz />}
+      {page === "starred" && <Starred />}
     </div>
   );
 }

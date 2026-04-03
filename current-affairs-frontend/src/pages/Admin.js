@@ -16,33 +16,29 @@ function Admin() {
   const [title, setTitle] = useState("");
 
   const [questions, setQuestions] = useState([
-    { question: "", answer: "", explanation: "", category: "SPORTS" }
+    { question: "", options: ["", "", "", ""], answer: "", explanation: "", category: "SPORTS" }
   ]);
 
   const token = localStorage.getItem("token");
 
-  // ➕ Add new block
   const addQuestion = () => {
     setQuestions([
       ...questions,
-      { question: "", answer: "", explanation: "", category: "SPORTS" }
+      { question: "", options: ["", "", "", ""], answer: "", explanation: "", category: "SPORTS" }
     ]);
   };
 
-  // ✏️ Update field
   const handleChange = (index, field, value) => {
     const updated = [...questions];
     updated[index][field] = value;
     setQuestions(updated);
   };
 
-  // ❌ Remove block
   const removeQuestion = (index) => {
     const updated = questions.filter((_, i) => i !== index);
     setQuestions(updated);
   };
 
-  // 🚀 Submit
   const submitData = async () => {
     if (!date || !title) {
       alert("Fill date & title");
@@ -108,6 +104,18 @@ function Admin() {
                 handleChange(index, "question", e.target.value)
               }
             />
+        
+        {/* OPTIONS */}
+        {q.options.map((opt, i) => (
+          <input
+          key={i}
+          placeholder={`Option ${i + 1}`}
+          value={opt}
+          onChange={e => {
+            const updated = [...questions];
+            updated[index].options[i] = e.target.value;
+            setQuestions(updated);}}
+            />))}
 
             <input
               placeholder="Answer"

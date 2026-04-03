@@ -152,3 +152,62 @@ textarea {
 h2 {
   margin-bottom: 10px;
 }
+
+/* DARK MODE */
+.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark .card {
+  background: #1e293b;
+}
+
+.dark .admin-box {
+  background: #1e293b;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background: #0f172a;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.dark .category-btn {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .category-btn.active {
+  background: #3b82f6;
+}
+
+/* MENU */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dark .menu {
+  background: #1e293b;
+}
+
+.menu-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #e2e8f0;
+}
+
+.dark .menu-item:hover {
+  background: #334155;
+}
